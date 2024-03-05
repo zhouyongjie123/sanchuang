@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sanchuang?useSSL=false&serverTimezone=UTC:mysql://localhost:3306/yourdatabase?useSSL=false&serverTimezone=UTC
+    username: root
+    password: zyj13617720953
+  mail:
+    host: smtp.qq.com
+    username: 1876849563@qq.com
+    password: ixmteouunzmnbbcb
+server:
+  port: 8080
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
