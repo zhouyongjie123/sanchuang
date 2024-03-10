@@ -5,7 +5,10 @@ import lombok.Data;
 @Data
 // 用于封装传感器数据的类
 public class SensorDataDTO {
-    // todo (zyj,2024/3/5 08:08) 写传感器数据的封装成员
+    private Integer humidity;// 湿度
+    private Integer temperature;// 温度
+    private Integer soilMoisture;// 土壤湿度
+    private Integer lightIntensity;// 光照强度
     private static volatile SensorDataDTO sensorDataDTO = null;
 
     private SensorDataDTO() {

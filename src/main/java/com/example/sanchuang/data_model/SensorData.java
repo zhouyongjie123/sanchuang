@@ -4,10 +4,14 @@ import lombok.Data;
 
 @Data
 public class SensorData {
-    // todo (zyj,2024/3/5 08:48) 写传感器数据的封装成员
+    // humidity:123 temperature:123 soilMoisture:123 lightIntensity:123
+    private Integer humidity;// 湿度
+    private Integer temperature;// 温度
+    private Integer soilMoisture;// 土壤湿度
+    private Integer lightIntensity;// 光照强度
     private static volatile SensorData sensorData = null;
+    private Long timeMills;
 
-    private static Long timestamp;
     private SensorData() {
     }
 
@@ -19,7 +23,6 @@ public class SensorData {
                 }
             }
         }
-        timestamp = System.currentTimeMillis();
         return sensorData;
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sanchuang.mapper.SensorDataMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.sanchuang.data_model.SensorData">
+        <id property="humidity" column="humidity" jdbcType="BIGINT"/>
+        <result property="temperature" column="temperature" jdbcType="VARCHAR"/>
+        <result property="soilMoisture" column="soil_moisture" jdbcType="INTEGER"/>
+        <result property="lightIntensity" column="light_intensity" jdbcType="DATE"/>
+        <result property="timeMills" column="time_mills" jdbcType="CHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        humidity,temperture,soil_moisture,
+        light_intensity,time_mills
+    </sql>
+</mapper>

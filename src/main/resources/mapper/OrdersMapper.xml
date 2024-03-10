@@ -9,7 +9,6 @@
             <result property="name" column="name" jdbcType="VARCHAR"/>
             <result property="number" column="number" jdbcType="INTEGER"/>
             <result property="date" column="date" jdbcType="DATE"/>
-            <result property="time" column="time" jdbcType="TIME"/>
             <result property="phone" column="phone" jdbcType="CHAR"/>
     </resultMap>
 
